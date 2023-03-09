@@ -1,0 +1,25 @@
+.search-area {
+  text-align: left;
+}
+.search-area .form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search-area .form label {
+  display: flex;
+  align-items: center;
+}
+.search-area .form input,
+.search-area textarea {
+  width: 300px;
+  height: auto;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+.search-results {
+  text-align: left;
+}
+.search-area .form button {
+  margin-right: 10px;
+}

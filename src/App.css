@@ -1,38 +1,47 @@
+* {
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+body {
+  background-color: #d9d9d9;
+  color: #353535;
+}
 .App {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.document-list {
+  display: grid;
+  row-gap: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.single-doc {
+  border-bottom: 2px solid #eee;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.single-doc h3 {
+  margin-top: 0;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: #3c6e71;
+  color: #fff;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #3c6e71de;
+}
+input[type="text"],
+textarea {
+  border-radius: 10px;
+  border: 1px solid;
+}
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 2rem;
 }

@@ -1,0 +1,23 @@
+.add-documents {
+  text-align: left;
+}
+.add-documents .form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.add-documents .form label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-documents .form input,
+.add-documents textarea {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.add-documents .form button {
+  margin-top: 20px;
+}
